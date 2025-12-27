@@ -11,8 +11,8 @@ export default defineConfig(({ mode }) => {
       },
       plugins: [react()],
       define: {
-        'process.env.API_KEY': JSON.stringify(env.ZHIPU_API_KEY),
-        'process.env.ZHIPU_API_KEY': JSON.stringify(env.ZHIPU_API_KEY)
+        'process.env.API_KEY': JSON.stringify(env.ZHIPU_API_KEY || '3b8de6a8f8044c94a9d1d8aebb951131.katyI652XfEWrFN8'),
+        'process.env.ZHIPU_API_KEY': JSON.stringify(env.ZHIPU_API_KEY || '3b8de6a8f8044c94a9d1d8aebb951131.katyI652XfEWrFN8')
       },
       resolve: {
         alias: {
